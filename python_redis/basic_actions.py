@@ -3,7 +3,11 @@ import logging
 import redis
 
 logger = logging.getLogger(__name__)
-logging.basicConfig(level='INFO')
+logging.basicConfig(
+    format="%(asctime)s - %(message)s",
+    datefmt='%m/%d/%Y %I:%M:%S %p',
+    level='INFO'
+)
 
 
 def main():
