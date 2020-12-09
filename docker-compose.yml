@@ -5,6 +5,8 @@ services:
     links:
       - redis
     container_name: python_redis
+    environment:
+      - NUMBERS
   redis:
     image: redis
     ports:
